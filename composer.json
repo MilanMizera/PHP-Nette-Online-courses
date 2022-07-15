@@ -19,7 +19,8 @@
 		"nette/security": "^3.1",
 		"nette/utils": "^3.2",
 		"latte/latte": "^2.9",
-		"tracy/tracy": "^2.8"
+		"tracy/tracy": "^2.8",
+		"twbs/bootstrap": "5.2.0-beta1"
 	},
 	"require-dev": {
 		"nette/tester": "^2.3",
@@ -30,5 +31,10 @@
 			"App\\": "app"
 		}
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "stable",
+	"config": {
+		"allow-plugins": {
+			"symfony/thanks": true
+		}
+	}
 }
