@@ -1,4 +1,14 @@
-.hello {
-    color: green;
-    font-size: 45px;
+/*Footer*/
+.text-reset {
+    color: rgb(255, 255, 255) !important;
+}
+
+/*Header*/
+.navbar-expand-lg .navbar-collapse {
+    margin: auto;
+}
+
+#navbarSupportedContent {
+    display: flex;
+    justify-content: center;
 }
