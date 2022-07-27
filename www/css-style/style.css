@@ -1,7 +1,19 @@
 /*Footer*/
-.text-reset {
-    color: rgb(255, 255, 255) !important;
+
+#footer_container {
+    margin-top: 20px;
 }
+
+.text-reset {
+    color: rgb(204, 204, 204) !important;
+    
+}
+
+.text-reset:hover {
+    color: rgb(133, 133, 133) !important;
+    text-decoration: none;
+}
+
 
 .contact_item {
     display: block;
@@ -13,7 +25,41 @@
     color: inherit!important;
 }
 
-
+#footer_container {
+    margin-top: 20px;
+}
 
 /*Header*/
 
+.navbar-brand {
+    width: 100px;
+    max-height: auto;
+    max-width: 100%;
+    height: 60px;
+    margin-left: 10px;
+    padding-top: 0px;
+    margin-right: 0px;
+}
+
+.nav-link {
+    margin-right: 20px;
+}
+
+.btn {
+    margin-right: 30px;
+    
+}
+
+.btn:hover {
+    margin-right: 30px;
+    transition: 2s;
+    
+}
+
+.btn_search:hover {
+background: inherit;
+}
+
+.navbar-brand {
+    margin-left: 30px;
+}
