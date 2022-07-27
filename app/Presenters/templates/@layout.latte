@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width">
 	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Web</title>
     <link rel="icon" href="{$basePath}/img/favicon/favicon.ico">
-	<link rel="stylesheet" href="{$basePath}/css-style/style.css">
-	<link rel="stylesheet" href="{$basePath}/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="{$basePath}/css-style/style.css?v={time()}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 <body>
@@ -15,36 +15,42 @@
 <header>
 {block header}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Domů</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
   </div>
 </nav>
-
 {/block}
 </header>
 
@@ -58,12 +64,11 @@
 
 <footer>
 {block footer}
-<!-- Footer -->
+
 <div class="text-center text-lg-start bg-light text-muted" id="footer_container">
   <!-- Section: Social media -->
   <section
     class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Right -->
   </section>
 
   <!-- Section: Links  -->
@@ -103,9 +108,9 @@
             <a href="#!" class="text-reset">Kontakt</a>
           </p>
         </div>
-        <!-- Grid column -->
+        
 
-        <!-- Grid column -->
+        
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
@@ -123,42 +128,34 @@
           <p>
             <a href="#!" class="text-reset">Cookies</a>
           </p>
-          
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
             Kontakt
           </h6>
           <p><i class="fas fa-home me-3"></i> Česká Lípa 470 04</p>
-          <p>
+          <a href="mailto podpora@megakurzy.com" class="contact_item">
             <i class="fas fa-envelope me-3"></i>
             podpora@megakurzy.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> +420 747 774 477</p>
-          <p><i class="fas fa-print me-3"></i> +420 352 652 786</p>
+          </a>
+          <a href="+420 747 774 477" class="contact_item"><i class="fas fa-phone me-3"></i> +420 747 774 477</a>
+          <a href="+420 352 652 786" class="contact_item"><i class="fas fa-print me-3"></i> +420 352 652 786</a>
         </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
     </div>
   </section>
-  <!-- Section: Links  -->
-
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="text-center p-4" id="my_copyright" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2022  Copyright: všechna práva vyhrazena 
-    
   </div>
-  <!-- Copyright -->
 </div>
-<!-- Footer -->
+
 {/block}
 </footer>
 
-<script src="{$basePath}/bootstrap/js/bootstrap.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+"></script>
 </body>
 </html>
