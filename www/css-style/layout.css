@@ -1,6 +1,7 @@
 /*Footer*/
 
 #footer_container {
+    background: rgb(199, 255, 208) !important;
     margin-top: 20px;
 }
 
@@ -31,6 +32,10 @@
 
 /*Header*/
 
+.navbar {
+    background-color: rgb(53, 53, 255);
+}
+
 .navbar-brand {
     width: 100px;
     max-height: auto;
@@ -43,11 +48,17 @@
 
 .nav-link {
     margin-right: 20px;
+    color: rgb(255 255 255 / 55%) !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    transition: 1s;
+color: white !important;
 }
 
 .btn {
     margin-right: 30px;
-    
 }
 
 .btn:hover {
@@ -56,10 +67,14 @@
     
 }
 
-.btn_search:hover {
-background: inherit;
-}
+#btn_search {
+    color: white !important;
+    }
 
 .navbar-brand {
     margin-left: 30px;
+}
+
+.form-control:hover {
+    border: 1 px solid #ff000d !important;
 }
