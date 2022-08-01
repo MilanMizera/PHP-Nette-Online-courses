@@ -30,3 +30,13 @@
     background-color: rgb(160, 160, 160);
     margin-right: 50;
 }
+
+.login_background {
+
+    background-image: url({$basePath}/img/pozadíPřihlášení.png);
+    background-position: 50% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

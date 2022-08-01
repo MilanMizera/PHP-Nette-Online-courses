@@ -1,13 +1,14 @@
 {block content}
-<div class="login_container">
- <h2 class="login_title">Přihlásit se</h2>
+<div class="login_background">
+ <div class="login_container">
+  <h2 class="login_title">Přihlásit se</h2>
 
- {control signForm}
+  {control signForm}
 
- <div class="under_section">
- <a class="forgotten_password">Zapomněli jste heslo ?</a>
- <p class="register_text">Nemáte ještě účet ? <a class="user_register">Zaregistrujte se</a></p>
+  <div class="under_section">
+  <a class="forgotten_password">Zapomněli jste heslo ?</a>
+  <p class="register_text">Nemáte ještě účet ? <a n:href="Register:out" class="user_register">Zaregistrujte se</a></p>
+  </div>
  </div>
 </div>
-
 {/block}
