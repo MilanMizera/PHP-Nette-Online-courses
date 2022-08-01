@@ -1,0 +1,32 @@
+/*Login*/
+
+#frm-signForm {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    width: 100%;
+}
+
+.login_title {
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.forgotten_password {
+    text-align: center;
+}
+
+.under_section {
+    text-align: center;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+
+.login_container {
+    background-color: rgb(160, 160, 160);
+    margin-right: 50;
+}
