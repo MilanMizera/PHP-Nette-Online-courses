@@ -14,9 +14,13 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
 
 	$form = new Form; // means Nette\Application\UI\Form
 
+    $form->addText('name', 'Jméno:');
 
-	$form->addEmail('email', 'E-mail:');
-    
+    $form->addText('surname', 'Příjmení:');
+
+	$form->addEmail('email', 'E-mail:')
+    ->setRequired();
+
 	$form->addPassword('password', 'Heslo:')
 		->setRequired();
 
