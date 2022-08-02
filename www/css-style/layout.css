@@ -1,4 +1,9 @@
 /*Footer*/
+
+.logo_footer {
+    margin-top: 10px;
+}
+
 #my_copyright {
     background-color: white !important;
     color: rgb(177, 177, 177);
