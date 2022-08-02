@@ -1,7 +1,7 @@
 /*Footer*/
 
 #footer_container {
-    background: rgb(199, 255, 208) !important;
+    background: rgb(255, 255, 255) !important;
     margin-top: 20px;
 }
 
@@ -34,6 +34,7 @@
 
 .navbar {
     background-color: rgb(53, 53, 255);
+    padding: 15px 0px !important;
 }
 
 .navbar-brand {

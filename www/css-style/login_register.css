@@ -1,13 +1,19 @@
 /*Login*/
 
+th {
+    text-align: right !important;
+    
+}
+
 #frm-signForm {
     display: flex;
     justify-content: center;
 }
 
-.text {
-    margin: auto;
+input {
     width: 100%;
+  padding: 6px 0px;
+  box-sizing: border-box;
 }
 
 .login_title {
@@ -18,26 +24,72 @@
 
 .forgotten_password {
     text-align: center;
+
 }
 
 .under_section {
     text-align: center;
     margin-bottom: 100px;
     padding-bottom: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .login_container {
-    background-color: rgb(160, 160, 160);
-    margin-right: 50;
+    background-color: rgb(255, 255, 255);
+    margin-right: 150;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
 }
 
 .login_background {
 
-    background-image: url({$basePath}/img/pozadíPřihlášení.png);
-    background-position: 50% 40%;
+    background-image: url(../img/pozadiPrihlaseni.png);
+    background-position: 50% 35%;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:nrepeat;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/*Register*/
+
+table {
+    margin: auto;
+    width: 60%;
+}
+
+.register_text {
+    margin-top: 5px;
+}
+
+.register_title {
+text-align: center;
+}
+
+.register_background {
+    background-image: url(../img/pozadiRegistrace.png);
+    background-position: 50% 35%;
+    background-size: cover;
+    background-repeat: repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.register_container {
+
+    background-color: rgb(255, 255, 255);
+    margin-right: 150;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px 
+
+}
+
+.button {
+    background-color: rgb(15, 112, 15);
+    color: aliceblue;
+}
+
+
