@@ -14,10 +14,10 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
 
 	$form = new Form; // means Nette\Application\UI\Form
 
-    $form->addText('name', 'Jméno:');
-
-    $form->addText('surname', 'Příjmení:');
-
+    $form->addText('name', 'Jméno:')
+    ->setRequired();
+    $form->addText('surname', 'Příjmení:')
+    ->setRequired();
 	$form->addEmail('email', 'E-mail:')
     ->setRequired();
 
@@ -25,9 +25,11 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
 		->setRequired();
 
         $form->addCheckbox('agree', 'Souhlasím se zpracováním osobních údajů')
-        ->setRequired('Je potřeba souhlasit s osobníma údajema');
+        ->setRequired('Je potřeba souhlasit s osobníma údajema')
+        ->setHtmlAttribute('class','register_check');
     
-	$form->addSubmit('send', 'Přihlásit');
+	$form->addSubmit('send', 'Registrovat');
+    
     
 	return $form;
 }

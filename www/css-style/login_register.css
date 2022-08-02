@@ -13,6 +13,7 @@ th {
 input {
     width: 100%;
   padding: 6px 0px;
+  border-radius: 5px;
   box-sizing: border-box;
 }
 
@@ -20,6 +21,7 @@ input {
     text-align: center;
     margin-top: 100px;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .forgotten_password {
@@ -45,11 +47,11 @@ input {
 .login_background {
 
     background-image: url(../img/pozadiPrihlaseni.png);
-    background-position: 50% 35%;
+    background-position: 50% 0%;
     background-size: cover;
     background-repeat:nrepeat;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
 
 /*Register*/
@@ -65,6 +67,7 @@ table {
 
 .register_title {
 text-align: center;
+padding-bottom: 20px;
 }
 
 .register_background {
@@ -90,6 +93,24 @@ text-align: center;
 .button {
     background-color: rgb(15, 112, 15);
     color: aliceblue;
+    border-radius: 10px;
+}
+
+.required {
+    margin-right: 5px;
+}
+
+.text {
+    border-color: rgb(219, 219, 219);
+}
+
+.td:active {
+    border-color: rgb(189, 189, 189);
+}
+
+#frm-registerForm-name, #frm-registerForm-surname, #frm-registerForm-email {
+
+    margin-bottom: 10px ;
 }
 
 

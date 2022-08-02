@@ -1,4 +1,8 @@
 /*Footer*/
+#my_copyright {
+    background-color: white !important;
+    color: rgb(177, 177, 177);
+}
 
 #footer_container {
     background: rgb(255, 255, 255) !important;
@@ -30,6 +34,14 @@
     margin-top: 20px;
 }
 
+/*footr social media icons*/
+
+.fab {
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
 /*Header*/
 
 .navbar {
@@ -49,7 +61,7 @@
 
 .nav-link {
     margin-right: 20px;
-    color: rgb(255 255 255 / 55%) !important;
+    color: rgba(255, 255, 255, 0.801) !important;
 }
 
 .nav-link:hover {
@@ -69,7 +81,7 @@ color: white !important;
 }
 
 #btn_search {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.623) !important;
     }
 
 .navbar-brand {
