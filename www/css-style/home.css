@@ -6,7 +6,7 @@
     margin: auto;
     text-align: center;
     box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    padding: 50px 20px;
+    padding: 100px 20px;
 }
 
 
@@ -20,5 +20,8 @@
     padding: 20px 40px;
 }
 
+#carouselMultiItemExample {
 
+    margin-top: 100px;
+}
     
