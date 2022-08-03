@@ -49,7 +49,7 @@ input {
     background-image: url(../img/pozadiPrihlaseni.png);
     background-position: 50% 0%;
     background-size: cover;
-    background-repeat:nrepeat;
+    background-repeat:repeat;
     padding-top: 10px;
     padding-bottom: 40px;
 }

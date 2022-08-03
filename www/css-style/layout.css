@@ -12,6 +12,8 @@
 #footer_container {
     background: rgb(255, 255, 255) !important;
     margin-top: 20px;
+    border-top: 10px !important;
+    border-color: #ff000d !important;
 }
 
 .text-reset {
