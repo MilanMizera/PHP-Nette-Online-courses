@@ -118,5 +118,12 @@ padding-bottom: 20px;
     margin-bottom: 10px ;
 }
 
+.register_check {
+    width:auto !important;
+    display: inline-block;
+    margin-right: 5px !important ;
+    margin-top: 15px !important ;
+   
+}
 
 
