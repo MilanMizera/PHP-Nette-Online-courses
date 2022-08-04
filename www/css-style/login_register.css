@@ -34,6 +34,7 @@ input {
     margin-bottom: 100px;
     padding-bottom: 50px;
     margin-top: 50px;
+    margin-left: 70px;
 }
 
 .login_container {
@@ -52,6 +53,10 @@ input {
     background-repeat:repeat;
     padding-top: 10px;
     padding-bottom: 40px;
+}
+
+#frm-signForm-password, .button {
+margin-top: 30px;
 }
 
 /*Register*/
@@ -112,5 +117,6 @@ padding-bottom: 20px;
 
     margin-bottom: 10px ;
 }
+
 
 
