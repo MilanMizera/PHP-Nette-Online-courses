@@ -11289,10 +11289,7 @@ textarea.form-control-lg {
 
 #blog_background {
 margin-bottom: 100px;
-padding-left: 100px;
-padding-right: 100px;
-padding-top: 30px;
-
+padding: 100px;
 }
 
 #blog_title_background {
