@@ -21,7 +21,19 @@
 }
 
 #carouselMultiItemExample {
-
     margin-top: 100px;
 }
-    
+
+
+/*Section latest-courses*/
+.title_new_courses {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px !important;
+}
+
+#row_latest_courses {
+    align-content: center !important;
+    justify-content: center !important;
+    margin-bottom: 50px;
+}
