@@ -15,14 +15,16 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
 	$form = new Form; // means Nette\Application\UI\Form
 
     $form->addText('name', 'Jméno:')
-    ->setRequired();
+    ->setRequired('Prosím, vyplńte Vaše jméno');
+
     $form->addText('surname', 'Příjmení:')
-    ->setRequired();
+    ->setRequired('Prosím, vyplńte Vaše příjmení');
+
 	$form->addEmail('email', 'E-mail:')
-    ->setRequired();
+    ->setRequired('Prosím, vyplńte Vaší emailovou adresu');
 
 	$form->addPassword('password', 'Heslo:')
-		->setRequired();
+		->setRequired('Prosím, vyplńte Vaše heslo');
 
         $form->addCheckbox('agree', 'Souhlasím se zpracováním osobních údajů')
         ->setRequired('Je potřeba souhlasit s osobníma údajema')
