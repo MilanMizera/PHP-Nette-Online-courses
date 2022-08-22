@@ -6,21 +6,15 @@ namespace App\Presenters;
 
 use Nette;
 use Nette\Application\UI\Form;
+use App\Model\registerToDatabase;
 
 
-final class RegisterPresenter extends Nette\Application\UI\Presenter {
-
-    //Připojení do databáze
-    private Nette\Database\Explorer $database;
-
-	public function __construct(Nette\Database\Explorer $database)
-	{
-		$this->database = $database;
-	}
+final class RegisterPresenter extends Nette\Application\UI\Presenter 
+{
 
     //vytvoření registračního formulář
-    protected function createComponentRegisterForm(): Form {
-
+    protected function createComponentRegisterForm(): Form 
+    {
 	$form = new Form; // means Nette\Application\UI\Form
 
     $form->addText('name', 'Jméno:')
@@ -46,20 +40,10 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
 	return $form;
     }
 
-    //vložení dat do db
-    public function registerFormSucceeded(\stdClass $data): void {
-	
-	$this->database->table('registrace')->insert([
+    public function __construct(registerToDatabase $register_data) 
+    {
+        $this->$register_data= $register_data;
 
-		'jmeno' => $data->name,
-		'prijmeni' => $data->surname,
-		'email' => $data->email,
-        'heslo' => $data->password,
-	]);
-
-	$this->flashMessage('Úspěšně jste se registroval/a', 'success');
-	$this->redirect('this');
-}
-
+    }
 
 }
