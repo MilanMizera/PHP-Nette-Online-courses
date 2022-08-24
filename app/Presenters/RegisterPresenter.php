@@ -6,6 +6,7 @@ namespace App\Presenters;
 
 use Nette;
 use Nette\Application\UI\Form;
+use App\Model\registerToDatabase;
 
 
 final class RegisterPresenter extends Nette\Application\UI\Presenter {
@@ -41,6 +42,7 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
     public function __construct (registerToDatabase $registerToDatabase) {
 
         $this->registerToDatabase=$registerToDatabase;
+      
     }
 
 }
