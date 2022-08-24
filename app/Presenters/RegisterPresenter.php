@@ -39,7 +39,7 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
         return $form;
     }
 
-    public function __construct (registerToDatabase $registerToDatabase) {
+    public function __construct (registerToDatabase $registerToDatabase,) {
 
         $this->registerToDatabase=$registerToDatabase;
       
