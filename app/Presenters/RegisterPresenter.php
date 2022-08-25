@@ -47,4 +47,6 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
       
     }
 
+    $registerToDatabase->registerFormSucceeded();
+
 }
