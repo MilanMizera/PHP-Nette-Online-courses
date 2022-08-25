@@ -23,9 +23,6 @@ class registerToDatabase
             'email' => $data->email,
             'heslo' => $data->password,
         ]);
-    
-        $this->flashMessage('Úspěšně jste se registroval/a', 'success');
-        $this->redirect('this');
     }
 
 }
