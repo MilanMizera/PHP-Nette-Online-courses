@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Presenters;
 
-use Nette;
+use \Nette;
 use Nette\Application\UI\Form;
 use App\Model\registerToDatabase;
 
@@ -39,7 +39,9 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
         return $form;
     }
 
-    public function __construct (registerToDatabase $registerToDatabase,) {
+    private $registerToDatabase;
+
+    public function __construct (registerToDatabase $registerToDatabase) {
 
         $this->registerToDatabase=$registerToDatabase;
       
