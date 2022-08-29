@@ -11,6 +11,7 @@ use App\Model\registerToDatabase;
 
 final class RegisterPresenter extends Nette\Application\UI\Presenter {
 
+//předání služby registerToDatabase přes di kontejner
     private $registerToDatabase;
 
     public function __construct (registerToDatabase $registerToDatabase) {
@@ -41,13 +42,16 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter {
             ->setHtmlAttribute('class','register_check');
         
         $form->addSubmit('send', 'Registrovat');
-        
+
+        //definice funkce která se mí spustit po úspěšném odelání
         $form->onSuccess[] = [$this, 'onFormSucceeded'];
 
         return $form;
     }
-public function onFormSucceeded(\stdClass $data) 
+    //Musí být definovaná v presenteru, protože používá metody z hlavního presenteru redirect,flashmessage atd...
+public function onFormSucceeded(\stdClass $data)
 {
+    //objekt registerToDatabase->použíje ze třídy registerToDatabase metodu registerFormSucceeded
     $this->registerToDatabase->registerFormSucceeded($data);
     $this->flashMessage('Úspěšně jste se registroval/a', 'success');
     $this->redirect('this');
