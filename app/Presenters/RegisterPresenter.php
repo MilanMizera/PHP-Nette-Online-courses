@@ -8,7 +8,7 @@ use \Nette;
 use Nette\Application\UI\Form;
 use App\Model\registerToDatabase;
 
-
+// k třídě nette je klasicky v extends celá cesta k ní, protože cesta k třídě není definovaná v use cesta/trida
 final class RegisterPresenter extends Nette\Application\UI\Presenter
 {
 
@@ -43,7 +43,7 @@ final class RegisterPresenter extends Nette\Application\UI\Presenter
 
         $form->addSubmit('send', 'Registrovat');
 
-        //definice funkce která se mí spustit po úspěšném odelání
+        //definice callbackfunkce která se mí spustit po úspěšném odelání
         $form->onSuccess[] = [$this, 'onFormSucceeded'];
 
         return $form;
